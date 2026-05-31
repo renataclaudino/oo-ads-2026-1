@@ -1,34 +1,25 @@
-public class Pessoa {
+package empresa;
 
-    // Atributos
+public class Pessoa {
     public String nome;
     public Integer idade;
     public String cpf;
     public String email;
     public String telefone;
 
-    // Métodos
-    public void apresentar() {
-        System.out.println("Olá, meu nome é " + this.nome + " e tenho " + this.idade + "anos.");
-    }
-
-    public void fazerAniversario() {
-        this.idade++;   // Incrementa a idade
-        System.out.println("Feliz aniversário, " + this.nome + "! Agora você tem " + this.idade + "anos.");
-    }
-
-    public void atualizarEmail(String novoEmail) {
-        this.email = novoEmail;
-        System.out.println("Email atualizado para: " + this.email);
+    public Pessoa(String nome, Integer idade, String cpf, String email, String telefone) {
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = cpf;
+        this.email = email;
+        this.telefone = telefone;
     }
 
     public String exibirDados() {
-        // \n significa quebra de linha
-        return "Nome:" + this.nome +
-                "\nIdade:" + this.idade +
-                "\nCPF:" + this.cpf +
-                "\nE-mail:" + this.email +
-                "\nTelefone:" + this.telefone;
-
+        return "Nome: " + this.nome +
+                "\nIdade: " + this.idade +
+                "\nCPF: " + this.cpf +
+                "\nEmail: " + this.email +
+                "\nTelefone: " + this.telefone;
     }
 }

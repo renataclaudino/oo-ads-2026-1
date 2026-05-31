@@ -1,3 +1,4 @@
+package empresa;
 public class ContaBancaria {
     // Atributos
     public Double saldo;

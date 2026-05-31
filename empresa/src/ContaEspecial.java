@@ -1,3 +1,4 @@
+package empresa;
 public class ContaEspecial extends ContaBancaria {
     // Atributo exclusivo
     public Double limite;
